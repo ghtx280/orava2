@@ -1,0 +1,267 @@
+
+/* ОСНОВНІ */
+* {
+	text-decoration: none;
+	object-fit: cover;
+	user-select: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-drag: none;
+	font-family: raleway, roboto, sans-serif;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	font-weight: normal;
+	font-size: 16px;
+	outline:none;
+	margin: 0;
+	padding: 0;}
+html, body{ height: 100%;}
+
+/* ЗВИЧАЙНІ КНОПКИ */
+button{
+	width: 100%;
+	background: rgb(95, 132, 255);
+	padding: 12px 50px;
+	color: white;}
+button[color="orange"]{
+	background: orange;
+	color: #000}
+button[color="gray"]{
+	background: #eee;}
+button[color="red"]{
+	color: #000;
+	background: #f55;}
+button[color="blue"]{
+	color: #000;
+	background: rgb(95, 132, 255);}
+button[color="yellow"]{
+	color: #000;
+	background: rgb(255, 216, 59);}
+button[color="green"]{
+	background: rgb(52, 255, 58);
+	color: #000;}
+
+
+/* ВИРІВНЮВАННЯ ТЕКСТУ */
+[text]{ 
+	text-align: center; }
+[text="left"]{ 
+	text-align: left; }
+[text="right"]{ 
+	text-align: right;}
+[text="just"]{ 
+	text-align: justify;}
+
+/* ТЕКСТ 
+(Н1 24PX BLACK) 
+(Н2 24PX GRAY) 
+(Н3 16PX BLACK)
+(Н4 16PX GRAY)
+(Н5 14PX BLACK)
+(Н6 14PX GRAY) */
+h1 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #fff;}
+h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: gray;}
+h3 {
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #fff;}
+h4 {
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: gray;}
+h5 {
+	margin-bottom: 5px; 
+	font-size: 14px;
+	color: #fff;}
+h6 {
+	margin-bottom: 5px; 
+	font-size: 14px;
+	color: gray;}
+
+
+/* ВИРІВНЮВАННЯ */
+[flex]{display: flex;}
+
+[flex~="center"] { 
+	justify-content: center; 
+	align-items: center; 
+	flex-direction: column;}
+
+[flex~="row"]     { flex-direction:row            }
+[flex~="col"]     { flex-direction:column         }
+[flex~="row-rev"] { flex-direction:row-reverse    }
+[flex~="col-rev"] { flex-direction:column-reverse }
+
+[flex~="jc-c"]  { justify-content:center     }
+[flex~="jc-bl"] { justify-content:baseline   }
+[flex~="jc-s"]  { justify-content:flex-start }
+[flex~="jc-e"]  { justify-content:flex-end   }
+[flex~="jc-sb"]  { justify-content:space-between  }
+[flex~="jc-sa"]  { justify-content:space-around   }
+[flex~="jc-se"]  { justify-content:space-evenly   }
+
+[flex~="ai-c"]  { align-items:center     }
+[flex~="ai-bl"] { align-items:baseline   }
+[flex~="ai-s"]  { align-items:flex-start }
+[flex~="ai-e"]  { align-items:flex-end   }
+
+[flex~="g5"]  { gap:5px  }
+[flex~="g10"] { gap:10px }
+[flex~="g15"] { gap:15px }
+[flex~="g20"] { gap:20px }
+[flex~="g25"] { gap:25px }
+[flex~="g30"] { gap:30px }
+[flex~="g35"] { gap:35px }
+[flex~="g40"] { gap:40px }
+[flex~="g45"] { gap:45px }
+[flex~="g50"] { gap:50px }
+[flex~="g55"] { gap:55px }
+[flex~="g60"] { gap:60px }
+[flex~="g65"] { gap:65px }
+[flex~="g70"] { gap:70px }
+[flex~="g75"] { gap:75px }
+[flex~="g80"] { gap:80px }
+[flex~="g85"] { gap:85px }
+[flex~="g90"] { gap:90px }
+[flex~="g95"] { gap:95px }
+[flex~="g100"]{ gap:100px}
+
+[flex~="wrap"]{ flex-wrap: wrap; gap: 10px; }
+
+[m]  { margin:0  } 
+[m~="5"]  { margin:5px  }
+[m~="10"] { margin:10px }
+[m~="15"] { margin:15px }
+[m~="20"] { margin:20px }
+[m~="25"] { margin:25px }
+[m~="30"] { margin:30px }
+[m~="35"] { margin:35px }
+[m~="40"] { margin:40px }
+[m~="45"] { margin:45px }
+[m~="50"] { margin:50px }
+[m~="55"] { margin:55px }
+[m~="60"] { margin:60px }
+[m~="65"] { margin:65px }
+[m~="70"] { margin:70px }
+[m~="75"] { margin:75px }
+[m~="80"] { margin:80px }
+[m~="85"] { margin:85px }
+[m~="90"] { margin:90px }
+[m~="95"] { margin:95px }
+[m~="100"]{ margin:100px}
+
+
+[p]  { padding:0  }
+[p~="5"]  { padding:5px  }
+[p~="10"] { padding:10px }
+[p~="15"] { padding:15px }
+[p~="20"] { padding:20px }
+[p~="25"] { padding:25px }
+[p~="30"] { padding:30px }
+[p~="35"] { padding:35px }
+[p~="40"] { padding:40px }
+[p~="45"] { padding:45px }
+[p~="50"] { padding:50px }
+[p~="55"] { padding:55px }
+[p~="60"] { padding:60px }
+[p~="65"] { padding:65px }
+[p~="70"] { padding:70px }
+[p~="75"] { padding:75px }
+[p~="80"] { padding:80px }
+[p~="85"] { padding:85px }
+[p~="90"] { padding:90px }
+[p~="95"] { padding:95px }
+[p~="100"]{ padding:100px}
+
+[fsz="8"]{  font-size:8px }
+[fsz="10"]{ font-size:10px}
+[fsz="12"]{ font-size:12px}
+[fsz="14"]{ font-size:14px}
+[fsz="16"]{ font-size:16px}
+[fsz="18"]{ font-size:18px}
+[fsz="20"]{ font-size:20px}
+[fsz="24"]{ font-size:24px}
+[fsz="26"]{ font-size:26px}
+[fsz="28"]{ font-size:28px}
+[fsz="30"]{ font-size:30px}
+[fsz="32"]{ font-size:32px}
+[fsz="34"]{ font-size:34px}
+[fsz="46"]{ font-size:46px}
+[fsz="48"]{ font-size:48px}
+[fsz="50"]{ font-size:50px}
+[fsz="52"]{ font-size:52px}
+[fsz="54"]{ font-size:54px}
+[fsz="56"]{ font-size:56px}
+[fsz="58"]{ font-size:58px}
+[fsz="60"]{ font-size:60px}
+[fsz="62"]{ font-size:62px}
+[fsz="64"]{ font-size:64px}
+[fsz="66"]{ font-size:66px}
+[fsz="68"]{ font-size:68px}
+[fsz="70"]{ font-size:70px}
+[fsz="72"]{ font-size:72px}
+[fsz="74"]{ font-size:74px}
+[fsz="76"]{ font-size:76px}
+[fsz="78"]{ font-size:78px}
+[fsz="80"]{ font-size:80px}
+[fsz="82"]{ font-size:82px}
+[fsz="84"]{ font-size:84px}
+[fsz="86"]{ font-size:86px}
+[fsz="88"]{ font-size:88px}
+[fsz="90"]{ font-size:90px}
+[fsz="92"]{ font-size:92px}
+[fsz="94"]{ font-size:94px}
+[fsz="96"]{ font-size:96px}
+[fsz="98"]{ font-size:98px}
+[fsz="100"]{font-size:100px}
+
+
+
+
+
+/* КУРСОРИ */
+[pointer]{cursor:pointer}
+
+[modal]{
+	position:fixed;
+  top: 0;left: 0;
+  width: 100%; height: 100%;
+  z-index: 9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.8);
+
+}
+[modal] .menu{
+	background: #111;
+	border-radius: 10px 10px 0 0;
+	border-top: 1px solid #888;
+	width: 100%;
+	z-index: 999;
+}
+
+[modal] [close]{
+	position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+	z-index: 888;
+}
+
+
+[color="red"   ]{color: red;   }
+[color="blue"  ]{color: blue;  }
+[color="green" ]{color: green; }
+[color="yellow"]{color: yellow;}
+[color="white" ]{color: white; }
+[color="black" ]{color: black; }
+[color="orange"]{color: orange;}
+[color="gray"  ]{color: #888;  }
+
+

@@ -1,0 +1,157 @@
+::-webkit-scrollbar{ width: 0; height: 0} 
+body{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  margin: 50px 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+section{
+  position: fixed;
+  margin-top: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 80px;
+  border: none;
+  border-right: 1px solid #888;
+  gap: 20px;
+  padding: 20px 0;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid #888;
+  background: #111;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border-top: 1px solid #888;
+  background: #111;
+}
+hr{ margin-bottom: 20px }
+.postBody a{  color: orange; font-size: 14px; }
+a{  color: orange; font-size: 16px; }
+img[alt="ava"]{border-radius: 50%; object-fit: cover;}
+
+/* НАВІГАЦІЯ */
+nav{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 0 20px;
+	overflow-x: scroll;}
+nav p{
+	padding: 5px 15px;
+	margin: 5px 0;
+	cursor: pointer;}
+nav p:hover{
+	background: #eee;
+	border-radius: 10px;}
+p{ margin-bottom: 10px;}
+
+
+/*  КЛАСИ  */
+.wrapper{ 
+	padding:20px;
+	width: 100%;
+}
+.over{
+	position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 999;
+	background: #111;
+}
+.sto{
+	height: 100%;
+}
+.points{
+	font-size: 32px;
+	margin: 0;
+	height: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+
+/* ІНПУТ, СЕЛЕКТ, ТЕКСТАРІА  */
+input, 
+button, 
+select, 
+textarea {
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: none;
+	outline: none;
+	resize: none;
+	cursor: pointer;
+	width: 100%;
+}
+input, 
+select, 
+textarea {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 14px 0;
+	padding-left: 20px;
+	background: none;
+}
+input[type="checkbox"], 
+input[type="radio"]{
+	width: 20px;
+	height: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+input[type="range"],
+input[type="color"]{
+	padding: 0;
+	height: 30px;
+}
+input[type="submit"],
+input[type="button"]{
+	padding: 12px 50px;
+	cursor: pointer;
+	background:royalblue;
+	color: white;
+	box-shadow: none;
+	border: none;
+}
+a:hover,
+button:hover, 
+input[type="submit"]:hover, 
+input[type="button"]:hover,
+[pointer]:hover{ 
+	filter:brightness(80%)
+}
+@media screen and (min-width: 900px){
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 80px;
+  }
+  section{ display: flex;}
+  footer{ display: none }
+  header{ justify-content: flex-start }
+	.wrapper{ width: 70vh }
+}

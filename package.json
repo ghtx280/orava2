@@ -1,0 +1,26 @@
+{
+  "name": "orange2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "svelte": "^3.44.0",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "firebase": "^9.8.1",
+    "jquery": "^3.6.0",
+    "linkify-plugin-mention": "^3.0.4",
+    "linkify-string": "^3.0.4",
+    "linkifyjs": "^3.0.5",
+    "marked": "^4.0.16",
+    "svelte-navigator": "^3.1.6",
+    "svelte-spa-router": "^3.2.0"
+  }
+}
